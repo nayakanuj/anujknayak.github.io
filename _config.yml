@@ -11,9 +11,9 @@ title                    : "Anuj K. Nayak"
 title_separator          : "-"
 name                     : &name "Anuj K. Nayak"
 description              : &description "personal description"
-url                      : https://nayakanuj7.github.io/personal_webpage # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://nayakanuj7.github.io/personal_webpage" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "nayakanuj7/personal_webpage"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -86,7 +86,7 @@ author:
   location         :
   employer         : "Univeristy of Illinois, Urbana-Champaign"
   pubmed           : 
-  googlescholar    : "citations?user=2H0AOUoAAAAJ&hl=en&oi=ao"
+  googlescholar    : "https://scholar.google.com/citations?user=2H0AOUoAAAAJ&hl=en&oi=ao"
   email            : "anujk4@illinois.edu"
   researchgate     : 
   uri              :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : "in/anujknayak/"
+  linkedin         : "anujknayak"
   orcid            :
   pinterest        :
   soundcloud       :
