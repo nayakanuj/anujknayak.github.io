@@ -16,4 +16,4 @@ Before joining the PhD program at UIUC, I worked as a Modem Systems Engineer at 
 
 Research Interests:
 ======
-Fault-tolerant quantum computing, Quantum Information Theory, Machine Learning, Wireless Communications, and Network Science.
+Fault-tolerant Quantum Computing, Quantum Information Theory, Machine Learning, Wireless Communications, and Network Science.
