@@ -30,11 +30,13 @@ A simple linear array of \tu{nearest-neighbor capacitively coupled} Xmons (cross
 
 Circuit architecture
 ======
-
+[Fig 1. Architecture of an Xmon based circuit](/images/xmon_archietecture.png)
 
 Implementation of high fidelity C-Z gate by fast adiabatic frequency tuning
 ======
-
+[Fig 2. Energy levels of capacitively coupled nearest neighbor Xmons. a) Energy levels with no detuning, b) Spectrum of joint two-qubit system (uncoupled), and c) Spectrum of joint two-qubit system with capacitive coupling.](/images/energy_levels_adiabatic_cz_4.png)
+[Energy levels at every stage of CZ operation and acquisition of phase $$=\pi$$ by the computational state $$\ket{11}$$.](/images/energy_levels_adiabatic_cz_3.png)
+[Fast adiabatic trajectory to implement a CZ gate shown by dashed and directed dark blue curve (labeled as $$\ket{1_B 1_A}$$).](/images/adiabatic_trajectory.png)
 
 Results
 ======
