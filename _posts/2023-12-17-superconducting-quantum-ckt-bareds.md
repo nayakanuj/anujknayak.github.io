@@ -30,17 +30,17 @@ A simple linear array of \tu{nearest-neighbor capacitively coupled} Xmons (cross
 
 Circuit architecture
 ======
-[Fig 1. Architecture of an Xmon based circuit](/personal_webpage/images/xmon_architecture.png)
+![Fig 1. Architecture of an Xmon based circuit](/personal_webpage/images/xmon_architecture.png)
 
 Implementation of high fidelity C-Z gate by fast adiabatic frequency tuning
 ======
-[Fig 2. Energy levels of capacitively coupled nearest neighbor Xmons. a) Energy levels with no detuning, b) Spectrum of joint two-qubit system (uncoupled), and c) Spectrum of joint two-qubit system with capacitive coupling.](/personal_webpage/images/energy_levels_adiabatic_cz_4.png)
-[Energy levels at every stage of CZ operation and acquisition of phase $$=\pi$$ by the computational state $$\ket{11}$$.](/personal_webpage/images/energy_levels_adiabatic_cz_3.png)
-[Fast adiabatic trajectory to implement a CZ gate shown by dashed and directed dark blue curve (labeled as $$\ket{1_B 1_A}$$).](/personal_webpage/images/adiabatic_trajectory.png)
+![Fig 2. Energy levels of capacitively coupled nearest neighbor Xmons. a) Energy levels with no detuning, b) Spectrum of joint two-qubit system (uncoupled), and c) Spectrum of joint two-qubit system with capacitive coupling.](/personal_webpage/images/energy_levels_adiabatic_cz_4.png)
+![Energy levels at every stage of CZ operation and acquisition of phase $$=\pi$$ by the computational state $$\ket{11}$$.](/personal_webpage/images/energy_levels_adiabatic_cz_3.png)
+![Fast adiabatic trajectory to implement a CZ gate shown by dashed and directed dark blue curve (labeled as $$\ket{1_B 1_A}$$).](/personal_webpage/images/adiabatic_trajectory.png)
 
 Results
 ======
-[Sequence fidelity vs circuit depth ($$m$$). The sequence fidelity of CZ gate is sandwiched between the sequence fidelity of reference circuit (black solid curve) and sequence fidelity of 99% (black dashed curve). Therefore, CZ has a circuit fidelity of $$>99%$$.](/images/CZ_benchmarking1.png)
+![Sequence fidelity vs circuit depth ($$m$$). The sequence fidelity of CZ gate is sandwiched between the sequence fidelity of reference circuit (black solid curve) and sequence fidelity of 99% (black dashed curve). Therefore, CZ has a circuit fidelity of $$>99%$$.](/images/CZ_benchmarking1.png)
 
 Conclusion
 ======
