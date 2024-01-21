@@ -30,8 +30,17 @@ A simple linear array of \tu{nearest-neighbor capacitively coupled} Xmons (cross
 
 Circuit architecture
 ======
+
+------
 ![](/personal_webpage/images/xmon_architecture.png)
 *Fig 1. Architecture of an Xmon based circuit*
+
+------
+
+The quantum circuit contains a linear array of 5 Xmons. Each Xmon has a cross-shaped structure with 4 arms – one arm for control, 2 for coupling with adjacent Xmons to the left and right, and one for readout. Unlike the original transmon qubit proposed in [(Koch et al)](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.76.042319), Xmon is grounded with one of its capacitor pads. Every Xmon couples capacitively to the adjacent Xmons - this is another key difference with the 3-qubit transmon circuit proposed in [(Chow et al)](https://www.nature.com/articles/ncomms5015), where a bus resonator was used for coupling. The simple modular architecture of the superconducting circuit implies that the scaling is straightforward - merely concatenate Xmons in a linear array.
+Single qubit gates can be implemented as follows: X rotations can be implemented using resonant microwave pulses, and Z rotations by using flux bias current. Readout is done using a single line by frequency division multiplexing and dispersive readout.
+
+The dispersive readout is performed as follows: In Figure 1, each qubit has a dedicated readout resonator capacitively coupled to one arm of the Xmon. The resonant frequency ($$\omega_r$$) of the resonator is detuned far away from the qubit transition frequency ($$\omega_{01}$$), in particular, the detuning is large relative to the coupling constant $g$, which is called the dispersive regime. Now, due to coupling with the qubit, the overall resonant frequency depends on the qubit transition frequency, which is the key ingredient allowing qubit readout. In order to measure the qubit, we interrogate the resonator by applying a microwave pulse close to the resonance frequency and by measuring the reflected signal. In the Xmon architecture in Figure 1, there is only a single readout line that contains frequency division multiplexed readout pulses for each qubit.
 
 Implementation of high fidelity C-Z gate by fast adiabatic frequency tuning
 ======
@@ -58,6 +67,7 @@ One may ask, can we make this operation even faster? - attempting this would lea
 *Fast adiabatic trajectory to implement a CZ gate shown by dashed and directed dark blue curve (labeled as $$\ket{1_B 1_A}$$).*
 
 ------
+
 Results
 ======
 
@@ -65,8 +75,11 @@ A straightforward way to evaluate the gate fidelity is to arbitrarily initialize
 
 Benchmarking of the fidelity of gates is performed in the following manner: first, consider a reference circuit that performs random Clifford gates $m$ times followed by a recovery gate that undoes all the previous $m$ gates resulting in an overall identity operation (supposing the gates are noiseless). The fidelity of this sequence of gates forms a reference that captures the initialization and measurement errors. Secondly, the gate under evaluation, is interleaved with the same set of random Clifford gates $m$ times, and a final recovery gate (different from the reference circuit) is appended at the end of the chain of gates such that the entire operation is equivalent to identity. Now, the gate fidelity can be inferred from the difference in fidelities between the reference circuit and interleaved circuit. In Figure 5, x-axis is the depth of the circuit, y-axis is the sequence fidelity. Black solid curve corresponds to 100\% fidelity and the dashed curve to 99\% fidelity. The two-qubit CZ gate has a fidelity$>$99\% at all depths.
 
+------
 ![](/personal_webpage/images/CZ_benchmarking1.png)
 *Sequence fidelity vs circuit depth ($$m$$). The sequence fidelity of CZ gate is sandwiched between the sequence fidelity of reference circuit (black solid curve) and sequence fidelity of 99% (black dashed curve). Therefore, CZ has a circuit fidelity of > 99%.*
+
+------
 
 Conclusion
 ======
