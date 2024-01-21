@@ -45,13 +45,19 @@ This happens only for state $$\ket{11}$$ and all other states remain unchanged s
 
 One may ask, can we make this operation even faster? - attempting this would lead to the following issues: the detuning trajectory may not be adiabatic, which could worsen the leakage to a non-computational state $$\ket{20}$$. Upon reaching the avoided crossing, the controlled-Z gate duration is also limited by the coupling constant between the qubits (gate duration is inversely proportional to $$g$$). Therefore, to achieve high fidelity of a two-qubit gate, we need to operate fast enough to not let the quantum state decohere, and at the same time slow enough to maintain adiabaticity (minimize the leakage to non-computational state). This can be achieved by optimizing the detuning, phase accumulation and reverting trajectory as shown in Figure 4.
 
+------
 ![](/personal_webpage/images/energy_levels_adiabatic_cz_4.png)
 *Fig 2. Energy levels of capacitively coupled nearest neighbor Xmons. a) Energy levels with no detuning, b) Spectrum of joint two-qubit system (uncoupled), and c) Spectrum of joint two-qubit system with capacitive coupling.*
+
+------
 ![](/personal_webpage/images/energy_levels_adiabatic_cz_3.png)
 *Energy levels at every stage of CZ operation and acquisition of phase $$=\pi$$ by the computational state $$\ket{11}$$.*
+
+------
 ![](/personal_webpage/images/adiabatic_trajectory.png)
 *Fast adiabatic trajectory to implement a CZ gate shown by dashed and directed dark blue curve (labeled as $$\ket{1_B 1_A}$$).*
 
+------
 Results
 ======
 
@@ -59,8 +65,8 @@ A straightforward way to evaluate the gate fidelity is to arbitrarily initialize
 
 Benchmarking of the fidelity of gates is performed in the following manner: first, consider a reference circuit that performs random Clifford gates $m$ times followed by a recovery gate that undoes all the previous $m$ gates resulting in an overall identity operation (supposing the gates are noiseless). The fidelity of this sequence of gates forms a reference that captures the initialization and measurement errors. Secondly, the gate under evaluation, is interleaved with the same set of random Clifford gates $m$ times, and a final recovery gate (different from the reference circuit) is appended at the end of the chain of gates such that the entire operation is equivalent to identity. Now, the gate fidelity can be inferred from the difference in fidelities between the reference circuit and interleaved circuit. In Figure 5, x-axis is the depth of the circuit, y-axis is the sequence fidelity. Black solid curve corresponds to 100\% fidelity and the dashed curve to 99\% fidelity. The two-qubit CZ gate has a fidelity$>$99\% at all depths.
 
-![](personal_webpage/images/CZ_benchmarking1.png)
-*Sequence fidelity vs circuit depth ($$m$$). The sequence fidelity of CZ gate is sandwiched between the sequence fidelity of reference circuit (black solid curve) and sequence fidelity of 99% (black dashed curve). Therefore, CZ has a circuit fidelity of $$>99%$$.*
+![](/personal_webpage/images/CZ_benchmarking1.png)
+*Sequence fidelity vs circuit depth ($$m$$). The sequence fidelity of CZ gate is sandwiched between the sequence fidelity of reference circuit (black solid curve) and sequence fidelity of 99% (black dashed curve). Therefore, CZ has a circuit fidelity of > 99%.*
 
 Conclusion
 ======
@@ -68,3 +74,8 @@ In this blogpost, we reviewed an Xmon-based superconducting quantum circuit, whi
 
 Some open questions not addressed by this work are as follows: First, to implement surface code, a linear array is not sufficient - a 2D array of data qubits and ancillas in a checkerboard pattern is required. The authors of paper [(Barends et al)](https://www.nature.com/articles/nature13171) propose a 2D architecture (in supplementary material), but without performance analysis. Therefore, practical extension of the current Xmon architecture is still an open (most likely engineering) challenge (at the time of publication of [(Barends et al)](https://www.nature.com/articles/nature13171)).
 Second, to perform meaningful quantum computations we need long-range coupling between logical qubits (formed by patches of several physical qubits) - the routing between logical qubits is not addressed in the paper, which makes realizing a truly fault-tolerant quantum computer still a work in progress.
+
+
+
+
+
