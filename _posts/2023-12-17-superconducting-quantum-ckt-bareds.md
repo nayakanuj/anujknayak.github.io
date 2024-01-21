@@ -1,11 +1,13 @@
 ---
-title: 'Teleportation, Shared Entanglement and Quantum Capacity'
+title: 'Understanding high-fidelity supercoducting universal quantum gates'
 date: 2024-01-21
 permalink: /posts/2024/08/quantum_capacity/
 tags:
-  - Quantum Capacity
-  - Shared Entanglement
-  - Teleportation
+  - Xmon, Transmon
+  - Superconducting quantum circuits
+  - Fast-adiabatic C-Z gate
+  - Surface code threshold
+  - High fidelity
 ---
 
 What this post is (or is not) about?
