@@ -1,7 +1,7 @@
 ---
 title: 'Understanding high-fidelity supercoducting universal quantum gates'
 date: 2024-01-21
-permalink: /posts/2024/08/quantum_capacity/
+permalink: /posts/2023/12/xmon_barends/
 tags:
   - Xmon, Transmon
   - Superconducting quantum circuits
@@ -10,14 +10,12 @@ tags:
   - High fidelity
 ---
 
-What this post is (or is not) about?
-======
 This post is a summary of the paper ``[Supercoducting quantum circuits at the surface code threshold for fault tolerance](https://www.nature.com/articles/nature13171)" by Barends et al. The goal of this blogpost is to focus on the key message conveyed in the paper, and not to present all the details of the paper.
 
 # search-replace:
 # \cite{chow2014implementing} --- [(Chow et al)](https://www.nature.com/articles/ncomms5015) 
 # \cite{aharonov1997fault} --- [(Aharonov et al)](https://dl.acm.org/doi/abs/10.1137/S0097539799359385)
-# \cite{barends2014superconducting} --- [(Barends et al)](xhttps://www.nature.com/articles/nature13171) 
+# \cite{barends2014superconducting} --- [(Barends et al)](https://www.nature.com/articles/nature13171) 
 # \cite{iontrap_fidelity} --- [(Benhelm et al)](https://www.nature.com/articles/nphys961)
 
 Introduction
