@@ -1,5 +1,5 @@
 ---
-title: 'Understanding high-fidelity supercoducting universal quantum gates'
+title: 'Understanding surface code compatible high-fidelity supercoducting universal quantum gates'
 date: 2024-01-21
 permalink: /posts/2023/12/xmon_barends/
 tags:
