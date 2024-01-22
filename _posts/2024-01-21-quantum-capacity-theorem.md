@@ -120,16 +120,16 @@ Now, Bob can discard subsystem $B_3$ and retain only $B_1$ which is entangled wi
 
 Converse
 ------
-Similar to Shannon's channel coding theorem, the proof of converse of quantum capacity theorem is shorter. Suppose Alice has a pair of entangled qubits $\Phi_{RA}$, and she wants to send her subsystem A (one qubit from each pair) to Bob. Let $$(\mathcal{E}_{A \rightarrow A^n}, \mathcal{D}_{B^n \rightarrow B})$$ is an encoder decoder pair for the channel $$\mathcal{N}_{A^n \rightarrow B^n}$$, then the received quantum state after Bob decodes is given by $\omega_{RB} = \mathcal{D}_{B^n \rightarrow B} \circ \mathcal{N}_{A^n \rightarrow B^n} \circ \mathcal{E}_{A \rightarrow A^n}(\Phi_{RA})$. For the converse part we need to prove that if $\frac{1}{2} \vert  \vert  \omega_{RB} - \Phi_{RA} \vert  \vert <\epsilon$, then $R = \frac{\log  \vert A \vert }{n} \leq \mathcal{Q}(\mathcal{N})$.
+Similar to Shannon's channel coding theorem, the proof of converse of quantum capacity theorem is shorter. Suppose Alice has a pair of entangled qubits $\Phi_{RA}$, and she wants to send her subsystem A (one qubit from each pair) to Bob. Let $$(\mathcal{E}_{A \rightarrow A^n}, \mathcal{D}_{B^n \rightarrow B})$$ is an encoder decoder pair for the channel $$\mathcal{N}_{A^n \rightarrow B^n}$$, then the received quantum state after Bob decodes is given by $$\omega_{RB} = \mathcal{D}_{B^n \rightarrow B} \circ \mathcal{N}_{A^n \rightarrow B^n} \circ \mathcal{E}_{A \rightarrow A^n}(\Phi_{RA})$$. For the converse part we need to prove that if $$\frac{1}{2} \vert  \vert  \omega_{RB} - \Phi_{RA} \vert  \vert <\epsilon$$, then $$R = \frac{\log  \vert A \vert }{n} \leq \mathcal{Q}(\mathcal{N})$$.
 
 In classical information theory, the main ingredients for the proof is Fano's inequality and data processing inequalities. In quantum information theory, instead of Fano, another inequality called AFW (Alicki–Fannes–Winter) inequality is used for the proof (See [QIT textbook](https://doi.org/10.1017/CBO9781139525343), Theorem 11.10.3 for AFW inequality). Similar to Fano, the AFW inequality connects trace distance (error in classical) and entropy. The proof follows the following steps:
 
-$\log  \vert A \vert  = I(A\rangle B)_\Phi \leq I(A\rangle B)_{\omega} + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon)$
+$$\log  \vert A \vert  = I(A\rangle B)_\Phi \leq I(A\rangle B)_{\omega} + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon)$$
 
-$\leq I(A\rangle B^n)_{\omega*} + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon) \leq Q(\mathcal{N}^{\otimes n}) + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon)$
+$$\leq I(A\rangle B^n)_{\omega*} + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon) \leq Q(\mathcal{N}^{\otimes n}) + 2 \epsilon \log  \vert A \vert  + h_2(\epsilon)$$
 
 The first inequality is due to AFW inequality, the send inequality is due maximization of coherent information over $\omega$, and the last inequality is because of the definition of quantum capacity. Now, for a class of channels called degradable channels coherent information is additive. Restricting to only such channels, we obtain
 
-$R = \frac{\log  \vert A \vert }{n}\leq Q(\mathcal{N})+ 2 \epsilon \frac{\log  \vert A \vert }{n} + \frac{h_2(\epsilon)}{n}$.
+$$R = \frac{\log  \vert A \vert }{n}\leq Q(\mathcal{N})+ 2 \epsilon \frac{\log  \vert A \vert }{n} + \frac{h_2(\epsilon)}{n}$$.
 
-Now, similar to classical converse, we can see that if $R>Q(\mathcal{N})$, then the trace distance (error in classical) is bounded away from 0. Therefore, $R<Q(\mathcal{N})$ is a necessary condition for the trace distance to be bounded as $\frac{1}{2} \vert  \vert  \omega_{RB} - \Phi_{RA} \vert  \vert <\epsilon$ for any $\epsilon \in (0, 1)$. This concludes the proof of converse part.
+Now, similar to classical converse, we can see that if $R>Q(\mathcal{N})$, then the trace distance (error in classical) is bounded away from 0. Therefore, $$R<Q(\mathcal{N})$$ is a necessary condition for the trace distance to be bounded as $$\frac{1}{2} \vert  \vert  \omega_{RB} - \Phi_{RA} \vert  \vert <\epsilon$$ for any $$\epsilon \in (0, 1)$$. This concludes the proof of converse part.
