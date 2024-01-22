@@ -7,7 +7,7 @@ tags:
   - Asymptotic Equipartition Property
 ---
 
-The goal of this blogpost to explain quantum capacity theorem and its proofs (achievability and converse) to someone comfortable with classical information theory (asymptotic equipartition property and Shannon's channel coding theorem) and has some knowledge of quantum information processing (superposition, entanglement, density matrix formalism). First, we shall build our intuition through a toy example of private classical communication and creation of one distance-separated shared entanglement using a specific noisy quantum channel. Finally, we shall dive into the statement and proofs of quantum capacity theorem.
+The goal of this blogpost is to explain quantum capacity theorem and its proofs (achievability and converse) to someone comfortable with classical information theory (asymptotic equipartition property and Shannon's channel coding theorem) and has some knowledge of quantum information processing (superposition, entanglement, density matrix formalism). First, we shall build our intuition through a toy example of private classical communication and creation of one distance-separated shared entanglement using a specific noisy quantum channel. Finally, we shall dive into the statement and proofs of quantum capacity theorem.
 
 ------
 
