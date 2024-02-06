@@ -8,6 +8,7 @@ tags:
 ---
 
 The goal of this blogpost is to explain quantum capacity theorem and its proofs (achievability and converse). First, we shall build our intuition through a toy example of private classical communication and creation of one distance-separated shared entanglement using a specific noisy quantum channel. Finally, we shall dive into the statement and proofs of quantum capacity theorem.
+
 Prerequisites: Classical information theory : asymptotic equipartition property and Shannon's channel coding theorem; Quantum information processing: superposition, entanglement, density matrix formalism.
 
 ------
